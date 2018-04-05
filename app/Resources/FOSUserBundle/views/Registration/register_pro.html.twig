@@ -1,0 +1,480 @@
+{% extends 'base.html.twig'%}
+{% block body %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>medhplus</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Favicons
+            ================================================== -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css"  href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome/css/font-awesome.css')}}">
+
+        <!-- Stylesheet
+            ================================================== -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+
+    <!-- Header -->
+    <header class="text-center" name="home">
+        <div class="intro-text">
+            <h1>We are <span class="color">Optics</span></h1>
+            <p>An award winning digital design and development company</p>
+            <div class="clearfix"></div>
+            <a href="#about-section" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+    </header>
+    <!-- About Section -->
+    <div id="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <hr>
+            </div>
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Who We Are</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>What We Do</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Why Choose Us</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN SAMPLE FORM PORTLET-->
+    <div class="portlet light bordered">
+        <div class="portlet-title">
+            <div class="caption font-red-sunglo">
+                <i class="icon-settings font-red-sunglo"></i>
+                <span class="caption-subject bold uppercase"> Default Form</span>
+            </div>
+            <div class="actions">
+                <div class="btn-group">
+                    <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown"> Actions
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-pencil"></i> Edit </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-trash-o"></i> Delete </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-ban"></i> Ban </a>
+                        </li>
+                        <li class="divider"> </li>
+                        <li>
+                            <a href="javascript:;"> Make admin </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="portlet-body form">
+            <form role="form">
+                <div class="form-body">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </span>
+                            <input type="text" class="form-control" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Circle Input</label>
+                        <div class="input-group">
+                                                        <span class="input-group-addon input-circle-left">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </span>
+                            <input type="text" class="form-control input-circle-right" placeholder="Email Address"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <span class="input-group-addon">
+                                                            <i class="fa fa-user font-red"></i>
+                                                        </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Left Icon</label>
+                        <div class="input-icon">
+                            <i class="fa fa-bell-o font-green"></i>
+                            <input type="text" class="form-control" placeholder="Left icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Left Icon(.input-sm)</label>
+                        <div class="input-icon input-icon-sm">
+                            <i class="fa fa-bell-o"></i>
+                            <input type="text" class="form-control input-sm" placeholder="Left icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Left Icon(.input-lg)</label>
+                        <div class="input-icon input-icon-lg">
+                            <i class="fa fa-bell-o"></i>
+                            <input type="text" class="form-control input-lg" placeholder="Left icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Right Icon</label>
+                        <div class="input-icon right">
+                            <i class="fa fa-microphone fa-spin font-blue"></i>
+                            <input type="text" class="form-control" placeholder="Right icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Right Icon(.input-sm)</label>
+                        <div class="input-icon input-icon-sm right">
+                            <i class="fa fa-bell-o"></i>
+                            <input type="text" class="form-control input-sm" placeholder="Left icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Right Icon(.input-lg)</label>
+                        <div class="input-icon input-icon-lg right">
+                            <i class="fa fa-bell-o font-green"></i>
+                            <input type="text" class="form-control input-lg" placeholder="Left icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Circle Input</label>
+                        <div class="input-icon right">
+                            <i class="fa fa-microphone"></i>
+                            <input type="text" class="form-control input-circle" placeholder="Right icon"> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Input with Icon</label>
+                        <div class="input-group input-icon right">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-envelope font-purple"></i>
+                                                        </span>
+                            <i class="fa fa-exclamation tooltips" data-original-title="Invalid email." data-container="body"></i>
+                            <input id="email" class="input-error form-control" type="text" value=""> </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Input With Spinner</label>
+                        <input class="form-control spinner" type="text" placeholder="Process something" /> </div>
+                    <div class="form-group">
+                        <label>Static Control</label>
+                        <p class="form-control-static"> email@example.com </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Disabled</label>
+                        <input type="text" class="form-control" placeholder="Disabled" disabled> </div>
+                    <div class="form-group">
+                        <label>Readonly</label>
+                        <input type="text" class="form-control" placeholder="Readonly" readonly> </div>
+                    <div class="form-group">
+                        <label>Dropdown</label>
+                        <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Multiple Select</label>
+                        <select multiple class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Textarea</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile1">File input</label>
+                        <input type="file" id="exampleInputFile1">
+                        <p class="help-block"> some help text here. </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Checkboxes</label>
+                        <div class="mt-checkbox-list">
+                            <label class="mt-checkbox"> Checkbox 1
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox"> Checkbox 2
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox"> Checkbox 3
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Outline Checkboxes</label>
+                        <div class="mt-checkbox-list">
+                            <label class="mt-checkbox mt-checkbox-outline"> Checkbox 1
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox mt-checkbox-outline"> Checkbox 2
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox mt-checkbox-outline"> Checkbox 3
+                                <input type="checkbox" value="1" name="test" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Inline Checkboxes</label>
+                        <div class="mt-checkbox-inline">
+                            <label class="mt-checkbox">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox 1
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Checkbox 2
+                                <span></span>
+                            </label>
+                            <label class="mt-checkbox mt-checkbox-disabled">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3" disabled> Disabled
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Radios</label>
+                        <div class="mt-radio-list">
+                            <label class="mt-radio"> Radio 1
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-radio"> Radio 2
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-radio"> Radio 3
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Outline Radios</label>
+                        <div class="mt-radio-list">
+                            <label class="mt-radio mt-radio-outline"> Radio 1
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-radio mt-radio-outline"> Radio 2
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                            <label class="mt-radio mt-radio-outline"> Radio 3
+                                <input type="radio" value="1" name="test" />
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Inline Radio</label>
+                        <div class="mt-radio-inline">
+                            <label class="mt-radio">
+                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked> Option 1
+                                <span></span>
+                            </label>
+                            <label class="mt-radio">
+                                <input type="radio" name="optionsRadios" id="optionsRadios5" value="option2"> Option 2
+                                <span></span>
+                            </label>
+                            <label class="mt-radio mt-radio-disabled">
+                                <input type="radio" name="optionsRadios" id="optionsRadios6" value="option3" disabled> Disabled
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn blue">Submit</button>
+                    <button type="button" class="btn default">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- END SAMPLE FORM PORTLET-->
+
+    {{ form_start(form, {'method': 'post', 'action': path('user_pro_register'), 'attr': {'class': 'user_pro_register'}}) }}
+    <h3 class="font-green">Register Form</h3>
+    <div class="form-group">
+        {{ form_widget(form.username, { 'attr': {'class': 'form-control ', 'placeholder':'User Name'} }) }}
+        {% for errorItem in form.username.vars.errors %}
+            <span class="help-inline">{{ errorItem.message }}</span>
+        {% endfor %}
+
+    </div>
+
+
+    <div class="form-group">
+        {{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder':'E-mail'} }) }}
+        {% for errorItem in form.email.vars.errors %}
+            <span class="help-inline">{{ errorItem.message }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'form-control', 'placeholder':'Password'} }) }}
+        {% for errorItem in form.plainPassword.first.vars.errors %}
+            <span class="help-inline">{{ errorItem.message }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'form-control', 'placeholder':'Repeat Password'} }) }}
+        {% for errorItem in form.plainPassword.second.vars.errors %}
+            <span class="help-inline">{{ errorItem.message }}</span>
+        {% endfor %}
+    </div>
+
+    <div class="form-group">
+        {{ form_widget(form.company_name, { 'attr': {'class': 'form-control', 'placeholder':'Company Name'}} ) }}
+        {% for errorItem in form.company_name.vars.errors %}
+            <span class="help-inline">{{ errorItem.message }}</span>
+        {% endfor %}
+    </div>
+
+    <div class="form-actions">
+        <a class="btn btn-default" href="{{ path('fos_user_security_login') }}">Back to login</a>
+        <button type="submit" id="register-submit-btn" class="btn btn-success">Submit</button>
+    </div>
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
+
+
+    <!-- Contact Section -->
+    <div id="contact-section">
+        <div class="container">
+            <div class="section-title center">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact info</h4>
+                <div class="space"></div>
+                <p><i class="fa fa-map-marker"></i>4321 California St,<br>
+                    San Francisco, CA 12345</p>
+                <div class="space"></div>
+                <p><i class="fa fa-envelope-o"></i>info@company.com</p>
+                <div class="space"></div>
+                <p><i class="fa fa-phone"></i>+1 123 456 1234</p>
+            </div>
+            <div class="col-md-8">
+                <h4>Leave us a message</h4>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="social-section">
+        <div class="container">
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p>Copyright &copy;  Designed by <a href="https://twitter.com/medHPlus" rel="nofollow">medhplus</a></p>
+        </div>
+    </div>
+
+
+    </body>
+    </html>
+
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+{% endblock %}

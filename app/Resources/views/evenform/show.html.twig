@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Evenform</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Idevent</th>
+                <td>{{ evenForm.idEvent }}</td>
+            </tr>
+            <tr>
+                <th>Nomevent</th>
+                <td>{{ evenForm.nomEvent }}</td>
+            </tr>
+            <tr>
+                <th>Genreevent</th>
+                <td>{{ evenForm.genreEvent }}</td>
+            </tr>
+            <tr>
+                <th>Datedebevent</th>
+                <td>{% if evenForm.dateDebEvent %}{{ evenForm.dateDebEvent|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Datefinevent</th>
+                <td>{% if evenForm.dateFinEvent %}{{ evenForm.dateFinEvent|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Lieuevent</th>
+                <td>{{ evenForm.lieuEvent }}</td>
+            </tr>
+            <tr>
+                <th>Pathevent</th>
+                <td>{{ evenForm.pathEvent }}</td>
+            </tr>
+            <tr>
+                <th>Etatevent</th>
+                <td>{{ evenForm.etatEvent }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('evenform_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('evenform_edit', { 'idEvent': evenForm.idEvent }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Evenforms list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Idevent</th>
+                <th>Nomevent</th>
+                <th>Genreevent</th>
+                <th>Datedebevent</th>
+                <th>Datefinevent</th>
+                <th>Lieuevent</th>
+                <th>Pathevent</th>
+                <th>Etatevent</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for evenForm in evenForms %}
+            <tr>
+                <td><a href="{{ path('evenform_show', { 'idEvent': evenForm.idEvent }) }}">{{ evenForm.idEvent }}</a></td>
+                <td>{{ evenForm.nomEvent }}</td>
+                <td>{{ evenForm.genreEvent }}</td>
+                <td>{% if evenForm.dateDebEvent %}{{ evenForm.dateDebEvent|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if evenForm.dateFinEvent %}{{ evenForm.dateFinEvent|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ evenForm.lieuEvent }}</td>
+                <td>{{ evenForm.pathEvent }}</td>
+                <td>{{ evenForm.etatEvent }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('evenform_show', { 'idEvent': evenForm.idEvent }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('evenform_edit', { 'idEvent': evenForm.idEvent }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('evenform_new') }}">Create a new evenForm</a>
+        </li>
+    </ul>
+{% endblock %}

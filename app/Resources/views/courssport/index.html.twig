@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Courssports list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Idcours</th>
+                <th>Nomcours</th>
+                <th>Prixcours</th>
+                <th>Heurecours</th>
+                <th>Jours</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for coursSport in coursSports %}
+            <tr>
+                <td><a href="{{ path('courssport_show', { 'idCours': coursSport.idCours }) }}">{{ coursSport.idCours }}</a></td>
+                <td>{{ coursSport.nomCours }}</td>
+                <td>{{ coursSport.prixCours }}</td>
+                <td>{% if coursSport.heureCours %}{{ coursSport.heureCours|date('H:i:s') }}{% endif %}</td>
+                <td>{{ coursSport.jours }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('courssport_show', { 'idCours': coursSport.idCours }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('courssport_edit', { 'idCours': coursSport.idCours }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('courssport_new') }}">Create a new coursSport</a>
+        </li>
+    </ul>
+{% endblock %}

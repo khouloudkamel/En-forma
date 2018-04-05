@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Coach</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Idcoach</th>
+                <td>{{ coach.idCoach }}</td>
+            </tr>
+            <tr>
+                <th>Nomcoach</th>
+                <td>{{ coach.nomCoach }}</td>
+            </tr>
+            <tr>
+                <th>Prenomcoach</th>
+                <td>{{ coach.prenomCoach }}</td>
+            </tr>
+            <tr>
+                <th>Jobcoach</th>
+                <td>{{ coach.jobCoach }}</td>
+            </tr>
+            <tr>
+                <th>Pathcoach</th>
+                <td>{{ coach.pathCoach }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('coach_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('coach_edit', { 'idCoach': coach.idCoach }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+<table border="1">
+    <tr>
+    <th>Id</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+        <th>Action</th>
+    </tr>
+{% if cvs is not empty %}
+{% for cv in cvs %}
+<tr>
+<th >{{ cv.id }}</th>
+<th>{{ cv.nom }}</th>
+<th >{{ cv.prenom }}</th>
+    <th><a href="" value="" >Editer</a>
+    </th>
+</tr>
+{% endfor %}
+{% endif %}
+</table>
